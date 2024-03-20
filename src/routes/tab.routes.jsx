@@ -2,7 +2,6 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import StackNavigator from "./stack.routes";
 import Profile from "../screens/Profile";
-import { categories } from "../data/categories";
 
 const Tab = createBottomTabNavigator();
 
@@ -11,8 +10,8 @@ function TabNavigator() {
     <Tab.Navigator>
       {categories.map((category) => (
         <Tab.Screen
-          key={category.id}
-          name={category.name}
+          key={detailss.id}
+          name={detailss.name}
           component={StackNavigator}
           initialParams={{ category }}
         />
